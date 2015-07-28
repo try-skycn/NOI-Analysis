@@ -18,14 +18,21 @@ def get_cof(info, total):
 	else:
 		return total_score / (1 + decline_sopeed * (rate - gold_line))
 
+def addto_dict(dic, key, val):
+	if not dic.get(key):
+		dic[key] = val
+	else:
+		dic[key] += val
+
 
 folder = "../Data/OI/"
-contest_name = "noi"
+contest_name = "wc"
 contest_mode = "%s%s.csv" % (contest_name, "%d")
 output_name = "OI-Analysis/%s.csv" % contest_name
-year_list = [2011, 2012, 2013, 2014, 2015]
+year_list = [2012, 2013, 2015]
 
 prov_name = open("name.txt", "r").read().split('\n')
+prov_search = get_dict( prov_name, [True] * len(prov_name) )
 prov_strength = get_dict( prov_name, [0] * len(prov_name) )
 
 for year in year_list:
@@ -38,10 +45,12 @@ for year in year_list:
 		rank += 1
 		stu_info = get_dict(col_info, stu.split(','))
 		stu_info["rank"] = rank
-		prov_strength[stu_info["province"]] += get_cof(stu_info, total)
+		addto_dict( prov_strength, stu_info["province"], get_cof(stu_info, total) )
 
 outfile = open(folder + output_name, 'w')
 outfile.truncate()
 for prov, score in prov_strength.items():
-	outfile.write("%s,%s\n" % (prov, score))
+	if prov_search.get(prov):
+		outfile.write("%s,%s\n" % (prov, score))
+
 outfile.close()
