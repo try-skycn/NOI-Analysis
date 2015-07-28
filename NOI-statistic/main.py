@@ -26,10 +26,10 @@ def addto_dict(dic, key, val):
 
 
 folder = "../Data/OI/"
-contest_name = "wc"
-contest_mode = "%s%s.csv" % (contest_name, "%d")
+contest_name = "apio"
+contest_mode = "Contest_Data/%s%s.csv" % (contest_name, "%d")
 output_name = "OI-Analysis/%s.csv" % contest_name
-year_list = [2012, 2013, 2015]
+year_list = [2011, 2012, 2013, 2014, 2015]
 
 prov_name = open("name.txt", "r").read().split('\n')
 prov_search = get_dict( prov_name, [True] * len(prov_name) )
@@ -39,7 +39,7 @@ for year in year_list:
 	print "Dealing with year %d." % year
 	input_info = open(folder + (contest_mode % year), "r").read().split('\n')
 	col_info = input_info[0].split(',')
-	total = len(col_info) - 1
+	total = len(input_info) - 1
 	rank = 0
 	for stu in input_info[1:]:
 		rank += 1
@@ -50,7 +50,7 @@ for year in year_list:
 outfile = open(folder + output_name, 'w')
 outfile.truncate()
 for prov, score in prov_strength.items():
-	if prov_search.get(prov):
+	if prov_search.get(prov) != None:
 		outfile.write("%s,%s\n" % (prov, score))
 
 outfile.close()
