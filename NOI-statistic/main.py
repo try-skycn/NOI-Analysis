@@ -8,15 +8,21 @@ def get_dict(col, info):
 		i += 1
 	return dic
 
+def dict_init(lst, val):
+	dic = {}
+	for ele in lst:
+		dic[ele] = val
+	return dic
+
 gold_line = 0.15
-decline_sopeed = 5
-total_score = 10
+decline_sopeed = 5.0
+total_score = 10.0
 def get_cof(info, total):
-	rate = float(info["rank"]) / total
+	rate = float(info["rank"]) / float(total)
 	if rate <= gold_line:
 		return total_score
 	else:
-		return total_score / (1 + decline_sopeed * (rate - gold_line))
+		return total_score / (1.0 + decline_sopeed * (rate - gold_line))
 
 def addto_dict(dic, key, val):
 	if not dic.get(key):
@@ -24,33 +30,44 @@ def addto_dict(dic, key, val):
 	else:
 		dic[key] += val
 
-
-folder = "../Data/OI/"
-contest_name = "wc"
-contest_mode = "%s%s.csv" % (contest_name, "%d")
-output_name = "OI-Analysis/%s.csv" % contest_name
-year_list = [2012, 2013, 2015]
-
-prov_name = open("name.txt", "r").read().split('\n')
-prov_search = get_dict( prov_name, [True] * len(prov_name) )
-prov_strength = get_dict( prov_name, [0] * len(prov_name) )
-
-for year in year_list:
-	print "Dealing with year %d." % year
-	input_info = open(folder + (contest_mode % year), "r").read().split('\n')
-	col_info = input_info[0].split(',')
-	total = len(col_info) - 1
+def calc_strength(filename, name_list):
+	res = dict_init(name_list, 0.0)
+	content = open(filename).read().split('\n')
+	col_info = content[0].split(',')
+	total = len(content) - 1
 	rank = 0
-	for stu in input_info[1:]:
+	for stu in content[1:]:
 		rank += 1
-		stu_info = get_dict(col_info, stu.split(','))
+		stu_info = get_dict( col_info, stu.split(',') )
 		stu_info["rank"] = rank
-		addto_dict( prov_strength, stu_info["province"], get_cof(stu_info, total) )
+		if res.get( stu_info["province"] ) != None:
+			res[stu_info["province"]] += get_cof(stu_info, total)
+	return res
 
-outfile = open(folder + output_name, 'w')
-outfile.truncate()
-for prov, score in prov_strength.items():
-	if prov_search.get(prov):
-		outfile.write("%s,%s\n" % (prov, score))
+prov_list = open("name.txt").read().split('\n')
+root_folder = "../Data/"
+input_file = root_folder + "OI/Contest_Data/%s%d.csv"
+output_file = root_folder + "Time_Dependency/Output/%s.csv"
+contest_info = {
+	"wc" : [2012, 2013, 2015],
+	"noi" : [2011, 2012, 2013, 2014],
+	"apio" : [2011, 2012, 2013, 2014],
+	"ctsc" : [2011, 2012, 2013, 2014]
+}
+contest_result = {}
 
-outfile.close()
+for contest, year_list in contest_info.items():
+	contest_result[contest] = {}
+	for year in year_list:
+		contest_result[contest][year] = calc_strength(input_file % (contest, year), prov_list)
+
+for contest, year_list in contest_info.items():
+	output = open(output_file % contest, "w")
+	output.truncate()
+	for prov in prov_list:
+		output.write(prov)
+		for year in year_list:
+			output.write( ",%lf" % contest_result[contest][year][prov] )
+		output.write("\n")
+	output.close()
+
