@@ -50,9 +50,9 @@ input_file = root_folder + "OI/Contest_Data/%s%d.csv"
 output_file = root_folder + "Time_Dependency/Output/%s.csv"
 contest_info = {
 	"wc" : [2012, 2013, 2015],
-	"noi" : [2011, 2012, 2013, 2014],
-	"apio" : [2011, 2012, 2013, 2014],
-	"ctsc" : [2011, 2012, 2013, 2014]
+	"noi" : [2011, 2012, 2013, 2014, 2015],
+	"apio" : [2011, 2012, 2013, 2014, 2015],
+	"ctsc" : [2011, 2012, 2013, 2014, 2015]
 }
 contest_result = {}
 
