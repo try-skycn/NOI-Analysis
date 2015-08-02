@@ -1,0 +1,352 @@
+[
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 1
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 2
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 3
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 4
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 5
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 6
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 7
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 8
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 9
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 10
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 11
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 12
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 13
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 14
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 15
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 16
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 17
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 18
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 19
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 20
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 21
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 22
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 23
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 24
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 25
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 26
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 27
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : true,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 28
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : false,
+		"rank" : 29
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 30
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 31
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 32
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 33
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 34
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 35
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : false,
+		"rank" : 36
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 37
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : false,
+		"rank" : 38
+	},
+	{
+		"SJTU_profile" : true,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 39
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 40
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 41
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 42
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 43
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : true,
+		"FDU_competence" : true,
+		"rank" : 44
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 45
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 46
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 47
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : false,
+		"rank" : 48
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 49
+	},
+	{
+		"SJTU_profile" : false,
+		"FDU_profile" : false,
+		"SJTU_competence" : false,
+		"FDU_competence" : true,
+		"rank" : 50
+	}
+]
