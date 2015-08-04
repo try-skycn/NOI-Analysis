@@ -2,13 +2,6 @@
 students = require('./students.json');
 constant = require('./constant.json');
 
-function DEBUG() {
-	if (students[0].rank !== 1) {
-		console.log("WTF");
-		process.exit();
-	}
-}
-
 another = {
 	SJTU : "FDU",
 	FDU : "SJTU"
@@ -97,19 +90,29 @@ function interview(univ) {
 	);
 }
 
-for (var i = 0; i < students.length; ++i) {
-	if (students[i].SJTU_profile)
-		order_list["SJTU"].queue.push(students[i]);
-}
-for (var i = 0; i < students.length; ++i) {
-	if (students[i].SJTU_profile === false)
-		order_list["SJTU"].queue.push(students[i]);
+function SJTU_initialize(para) {
+	if (para === "NOI_ORDER") {
+		for (var i = 0; i < students.length; ++i) {
+			if (students[i].SJTU_profile)
+				order_list["SJTU"].queue.push(students[i]);
+		}
+		for (var i = 0; i < students.length; ++i) {
+			if (students[i].SJTU_profile === false)
+				order_list["SJTU"].queue.push(students[i]);
+		}
+	} else if (para === "PROFILE_PREFER") {
+		for (var i = 0; i < students.length; ++i) {
+			order_list["SJTU"].queue.push(students[i]);
+		}
+	}
 }
 
-for (var i = 0; i < students.length; ++i) {
-	//order_list["SJTU"].queue.push(students[i]);
-	order_list["FDU"].queue.push(students[i]);
-	students[i].state = "free";
+function FDU_initialize() {
+	for (var i = 0; i < students.length; ++i) {
+		//order_list["SJTU"].queue.push(students[i]);
+		order_list["FDU"].queue.push(students[i]);
+		students[i].state = "free";
+	}
 }
 
 function end_of_interview(univ) {
@@ -118,6 +121,9 @@ function end_of_interview(univ) {
 		console.log("\t\t" + accept_list[univ][i].rank);
 	}
 }
+
+SJTU_initialize("PROFILE_PREFER");
+FDU_initialize();
 
 interview("SJTU");
 interview("FDU");
