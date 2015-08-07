@@ -117,6 +117,7 @@ function FDU_initialize() {
 
 function end_of_interview(univ) {
 	console.log("\t" + univ + "\'s interview is over! Here is the accepting list.");
+	console.log("\t" + accept_list[univ].length);
 	for (var i = 0; i < accept_list[univ].length; ++i) {
 		console.log("\t\t" + accept_list[univ][i].rank);
 	}
